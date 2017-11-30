@@ -1,0 +1,40 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr, auto, auto, 1fr;
+    grid-template-rows: 30px 80px 80px 80px;
+    justify-content: left;
+    align-items: left;
+    overflow-x: hidden;
+}
+#knop{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.vlakje{
+    background-color: #64B6AC;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 12em;
+    height: 5em;
+    transition: transform .5s ease-out;
+}
+.vlakje-zwart{
+    background-color: #222222;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    width: 12em;
+    height: 5em;
+    transition: transform .6s ease-out;
+}
+.vlakje-rood{
+    background-color: #FF634D;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    width: 12em;
+    height: 5em;
+    transition: transform .7s ease-out;
+}
+.vlakje--schuif-uit{
+    transform: translateX(-18vw);
+}
