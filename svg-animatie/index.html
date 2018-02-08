@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>svg-animatie</title>
+  </head>
+  <body>
+  <div class="svg-wrapper">
+    <svg class="svg" height="220" width="320">
+      <rect class="shape" id="shape" height="220" width="320" />
+    </svg>
+  </div>
+  <script>
+      const shape = document.querySelector('.shape');
+
+      const length = shape.getTotalLength();
+      console.log(length);
+
+
+          const minusLength = length -(length * 2);
+      console.log(minusLength);
+//      setInterval(function() {
+//          const element = document.createElement('select');
+//          element.style.strokeDashoffset = minuslength;
+//          element.style.strokeDasharray = length;
+//      }, 1000);
+
+
+      var styles = getComputedStyle(document.documentElement);
+      var lengthValue = styles.getPropertyValue('--length');
+      console.log(lengthValue);
+      document.documentElement.style.setProperty('--length', length, "1");
+
+
+  </script>
+  </body>
+</html>

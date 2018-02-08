@@ -36,5 +36,5 @@ body{
     transition: transform .7s ease-out;
 }
 .vlakje--schuif-uit{
-    transform: translateX(-18vw);
+    transform: translateX(-12vw);
 }

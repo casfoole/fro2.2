@@ -1,0 +1,25 @@
+html, body {
+  background: rgb(20,20,20);
+  text-align: center;
+  height: 100%;
+}
+:root{
+  --minusT: 1080;
+  --length: 1080;
+}
+.shape {
+  stroke-dasharray: var(--length);
+  stroke-dashoffset: --minuslength;
+  fill: rgb(20,20,60);
+  stroke: #19f6e8;
+  transition: stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-dashoffset: 0;
+}
+.sec{
+  width: 25%;
+}
